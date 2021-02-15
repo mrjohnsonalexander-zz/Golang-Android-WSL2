@@ -45,7 +45,7 @@ adb devices
 ```
 
 # WSL Setup
-I executed script for installing Android SDK found https://gist.github.com/jjvillavicencio/18feb09f0e93e017a861678bc638dcb0, replacing "<user>" with appropriate name, from by Ubuntu bash terminal.
+I executed script for installing Android SDK found https://gist.github.com/jjvillavicencio/18feb09f0e93e017a861678bc638dcb0, replacing "\<user\>" with appropriate name, from by Ubuntu bash terminal.
 ```bash
 wget https://gist.githubusercontent.com/jjvillavicencio/18feb09f0e93e017a861678bc638dcb0/raw/0f6cb9c2b7bbd3c2b89e11f22cb29e9ce2b9c810/setup.sh
 ...
@@ -77,7 +77,7 @@ The setup.sh script will add ANDRIOD_HOME, so updated it, to match where I moved
 vim .bashrc
 export ANDROID_HOME=/home/<user>/Android/cmdline-tools/latest
 ```
-Also appended to .bashrc so the end of my it looks like (replace "<user>")
+Also appended to .bashrc so the end of my it looks like (replace "\<user\>")
 ```bash
 ...
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
