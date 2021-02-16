@@ -109,7 +109,6 @@ source ~/.bashrc
 ## Build and Install Example Gomobile app
 Following guidance here https://pkg.go.dev/golang.org/x/mobile@v0.0.0-20210208171126-f462b3930c8f/example/network.
 ```bash
-go get golang.org/x/mobile/cmd/gomobile
 gomobile init
 go get -v -d golang.org/x/mobile/example/network
 ...
