@@ -1,5 +1,8 @@
+# Motitation
+Experimentation with Enterprise Golang mobile development. While building Golang on Windows is possible, there are avoidable [issues](https://github.com/golang/go/issues?q=is%3Aissue+is%3Aopen+label%3AOS-Windows+), by using Windows for emulator and using WSL as build system for this experiment.
+
 # Golang-Android-WSL2
-Golang native app deployed to Android device, and developed on Windows Subsystem for Linux. 
+Golang native app deployed to Android device, and developed on Windows Subsystem for Linux.
 
 # Windows Setup
 My local is a Windows Surface Pro 7, and followed guidance from https://docs/microsoft.com/windows/wsl-install-win10
