@@ -57,7 +57,7 @@ mkdir ~/Android/cmdline-tools
 mv ~/Android/tools ~/Android/cmdline-tools/tools
 ```
 
-## Install Go, gomobile, NDK, ADB, and Socat
+## Install Go, gomobile, Android SDK, Android NDK, ADB, and Socat
 ```bash
 sudo apt install golang
 ...
@@ -70,6 +70,10 @@ wget https://dl.google.com/android/repository/android-ndk-r20-linux-x86_64.zip
 ...
 unzip android-ndk-r20-linux-x86_64.zip
 ...
+```
+Fixing or preventing "adb server version doesn't match this client error" can be done copying sdk adb to bin\adb.  
+```bash
+sudo cp ~/Android/platform-tools/adb /usr/bin/adb
 ```
 ## Update and Append .bashrc
 The setup.sh script will add ANDRIOD_HOME, so updated it, to match where I moved it to avoid sdkmanager warnings.
@@ -102,7 +106,7 @@ Of course needed to source it
 source ~/.bashrc
 ```
 
-## Built Example Gomobile app
+## Build and Install Example Gomobile app
 Following guidance here https://pkg.go.dev/golang.org/x/mobile@v0.0.0-20210208171126-f462b3930c8f/example/network.
 ```bash
 go get golang.org/x/mobile/cmd/gomobile
@@ -112,4 +116,5 @@ go get -v -d golang.org/x/mobile/example/network
 gomobile build golang.org/x/mobile/example/network
 gomobile install golang.org/x/mobile/example/network
 ```
+
 The on my Emulator, I nativgated to "Apps & notifications", and "See all <int> apps";  scrolled down to find "network" app, clicked to "App info", and clicked Open to launch a Green screen application (indicating golang.org is reachable when the app first starts, or red otherwise).
